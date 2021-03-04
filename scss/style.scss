@@ -1,0 +1,130 @@
+$primary:#3292a6;
+$bg-color:#fff;
+
+
+body {
+    background: #f1f1f18f;
+}
+.font-color{
+    color: $primary;
+}
+.bg-color{
+    background: #fff;
+}
+.bg-color2{
+    background: $primary;
+}
+
+.navbar{
+    box-shadow:2px 2px 5px $primary;
+    background: rgb(255, 255, 255);
+    opacity: 0.9;
+    .nav-item{
+        font-size: 1.4rem;
+        padding-right: 20px;
+        .nav-link{
+            color: #252525;
+        }
+        .nav-link:hover{
+            color: $primary;
+        }
+    }
+    .naav.item:last-child{
+        padding-right: 0px;
+    }
+    #nab-bg{
+        background: rgba(255, 255, 255, 0.342);
+    }
+    #nav-btn{
+        border: none;
+        outline: none;
+        #nav-btn span:hover{
+            color: aliceblue;
+        }
+    }
+}
+
+
+.showcase{
+    background: url('../img/home.jpg') no-repeat center top fixed;
+    .overly{
+        background:#3293a6b2;
+        padding-top:9rem !important;
+        padding-bottom:6rem !important;
+        #dis-btn{
+            font-size: 20px;
+        }
+        .lead{
+            font-size: 20px;
+        }
+        .showcase-heead-text{
+            font-size:6rem;
+        }
+    }
+    @media (max-width:991px) {
+        #book-img{
+            display: none;
+            line-height: 1px !important;
+        }
+        .overly{
+            padding-top: 8rem !important;
+            padding-bottom: 2rem !important;
+        }
+    }
+}
+// submit box 
+#submit-btn{
+    background:$primary;
+    color: aliceblue;
+    border: none;
+    font-size: 20px;
+
+}
+#submit-btn:hover{
+    background: #298192 !important;
+}
+//card
+.border-primary{
+    border: 1.5px solid $primary !important;
+}
+.bg-primary{
+    background:$primary !important;
+}
+// abut
+#abut{
+    .card:hover{
+        background: $primary;
+        color: $bg-color;
+        cursor: pointer;
+    }
+    .card:hover .font-color{
+        color: $bg-color;
+    }
+    #temImg{
+        width: 10rem;
+        height: 10rem;
+        object-fit: cover;
+        margin-top: -4rem;
+    }
+    @media (min-width:768px) {
+        #temImg{
+            width: 7rem;
+            height: 7rem;
+            margin-top: -5rem;
+        }
+    }
+    @media (min-width:991px) {
+        #temImg{
+            width: 10rem;
+            height: 10rem;
+            margin-top: -5rem;
+        }
+    }    
+}
+// tech get
+@media(max-width:768px){
+    #logoImg{
+        display: none;
+    }
+}
+
